@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/f25e1cd6-3e4e-4641-85bf-c81f7962772f/deploy-status)](https://app.netlify.com/sites/phrancoisweather/deploys)
+
 # Phrancois Weather
 
 Web application that allows you tocheck the weather for two different locations and compare. Great for planning a trip, it lets you see the current weather conditions as well ass the forecast.
@@ -12,6 +14,10 @@ Web application that allows you tocheck the weather for two different locations 
 
 I built the application using React and Vite to leverage the speedy development that Vite enables. I was able to quickly see changes as they were made because of Hot Module Replacement, (HMR): which enables a module to "hot replace" itself without affecting the rest of the page.
 I designed the application using two unique apis. I leveraged the GeoDB Cities API to collect geographic data for the input cities. Additionally, I implemented the OpenWeatherAPI to retrieve the weather data for each location. Finally, I designed a React frontend to make calls to both APIs as users enter new cities in the search bars.
+
+## Data Flow:
+
+When a user begins to enter a city into a Search Field, the input value is sent to GeoDB Cities API as part of the query and the response sent back contains information including the longitude, latitude and country code for the city. The application then uses the coordinates from the response to make a new call to the OpenWeather API. The response then includes weather conditions as well as a forecast for the given city.
 
 <!-- ## Optimizations
 *(optional)*
