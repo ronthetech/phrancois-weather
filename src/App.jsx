@@ -3,11 +3,13 @@ import "./App.css";
 import Search from "./components/search/Search";
 import { WEATHER_API_KEY, WEATHER_API_URL } from "./api";
 import CurrentWeather from "./components/current/CurrentWeather";
+import Forecast from "./components/forecast/Forecast";
 
 function App() {
   const [currentWeatherFrom, setCurrentWeatherFrom] = useState(null);
   const [currentWeatherTo, setCurrentWeatherTo] = useState(null);
-  const [forecast, setForecast] = useState(null);
+  const [forecastFrom, setForecastFrom] = useState(null);
+  const [forecastTo, setForecastTo] = useState(null);
 
   const handleOnSearchChangeFrom = (searchData) => {
     const [latitude, longitude] = searchData.value.split(" ");
@@ -25,7 +27,7 @@ function App() {
         const forecastResponse = await response[1].json();
 
         setCurrentWeatherFrom({ city: searchData.label, ...weatherResponse });
-        setForecast({ city: searchData.label, ...forecastResponse });
+        setForecastFrom({ city: searchData.label, ...forecastResponse });
       })
       .catch(console.log);
   };
@@ -46,26 +48,29 @@ function App() {
         const forecastResponse = await response[1].json();
 
         setCurrentWeatherTo({ city: searchData.label, ...weatherResponse });
-        setForecast({ city: searchData.label, ...forecastResponse });
+        setForecastTo({ city: searchData.label, ...forecastResponse });
       })
       .catch(console.log);
   };
 
   return (
-    <div className="container">
+    <>
       <h1 className="title">Phrancois Weather</h1>
-      <div className="search">
-        <h1>Your Location</h1>
-        <Search onSearchChange={handleOnSearchChangeFrom} />
-        {currentWeatherFrom && <CurrentWeather data={currentWeatherFrom} />}
+      <div className="container">
+        <div className="search">
+          <h1>Your Location</h1>
+          <Search onSearchChange={handleOnSearchChangeFrom} />
+          {currentWeatherFrom && <CurrentWeather data={currentWeatherFrom} />}
+          {forecastFrom && <Forecast data={forecastFrom} />}
+        </div>
+        <div className="search">
+          <h1>Destination</h1>
+          <Search onSearchChange={handleOnSearchChangeTo} />
+          {currentWeatherTo && <CurrentWeather data={currentWeatherTo} />}
+          {forecastTo && <Forecast data={forecastTo} />}
+        </div>
       </div>
-      <div className="search">
-        <h1>Destination</h1>
-        <Search onSearchChange={handleOnSearchChangeTo} />
-        {currentWeatherTo && <CurrentWeather data={currentWeatherTo} />}
-      </div>
-      {/* {forecast && <Forecast data={forecast} />} */}
-    </div>
+    </>
   );
 }
 
