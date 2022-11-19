@@ -20,7 +20,8 @@ const Search = ({ onSearchChange }) => {
             };
           }),
         };
-      });
+      })
+      .catch((error) => console.error("error:", error));
   };
 
   const handleOnChange = (searchData) => {
