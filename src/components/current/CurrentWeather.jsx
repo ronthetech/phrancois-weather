@@ -42,15 +42,15 @@ const CurrentWeather = ({ data }) => {
             </span>
           </div>
           <div className={styles.parameter_row}>
-            <span className={styles.parameter_label}>Wind: </span>
-            <span className={styles.parameter_value}>
-              {data.wind.speed} mph
-            </span>
-          </div>
-          <div className={styles.parameter_row}>
             <span className={styles.parameter_label}>Humidity: </span>
             <span className={styles.parameter_value}>
               {data.main.humidity}%
+            </span>
+          </div>
+          <div className={styles.parameter_row}>
+            <span className={styles.parameter_label}>Wind: </span>
+            <span className={styles.parameter_value}>
+              {data.wind.speed} mph
             </span>
           </div>
           {/* <div className={styles.parameter-row">
