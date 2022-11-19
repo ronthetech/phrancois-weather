@@ -12,12 +12,6 @@
   gap: 1em;
 }
 
-@media screen and (max-width: 760px) {
-  .container {
-    flex-direction: column;
-  }
-}
-
 .title {
   align-self: flex-start;
   text-transform: uppercase;
@@ -25,4 +19,12 @@
 
 .search {
   align-self: baseline;
+}
+@media screen and (max-width: 760px) {
+  .container {
+    flex-direction: column;
+  }
+  .search {
+    align-self: center;
+  }
 }
