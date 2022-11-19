@@ -12,8 +12,16 @@
   gap: 1em;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 760px) {
   .container {
     flex-direction: column;
   }
+}
+
+.title {
+  align-self: flex-start;
+}
+
+.search {
+  align-self: flex-end;
 }
