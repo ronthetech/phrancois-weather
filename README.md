@@ -6,7 +6,7 @@ Web application that allows you to check the weather for two different locations
 
 **Link to project:** [Phrancois Weather](https://phrancoisweather.netlify.app/)
 
-![Phrancois Weather](https://ronthetech.github.io/image-repo/phrancois-forecast/1.png)
+![Phrancois Weather](https://ronthetech.github.io/image-repo/projects/phrancois-weather/phrancois-weather.png)
 
 ## How It's Made:
 
