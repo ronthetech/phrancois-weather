@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/poppins': ^4.5.10
   '@types/react': ^18.0.24
   '@types/react-dom': ^18.0.8
   '@vitejs/plugin-react': ^2.2.0
@@ -11,6 +12,7 @@ specifiers:
   vite: ^3.2.3
 
 dependencies:
+  '@fontsource/poppins': 4.5.10
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-select: 5.6.1_2zx2umvpluuhvlq44va5bta2da
@@ -421,6 +423,10 @@ packages:
     resolution: {integrity: sha512-kt/tg1oip9OAH1xjCTcx1OpcUpu9rjDw3GKJ/rEhUqhO7QyJWfrHU0DpLTNsH67+JyFL5Kv9X1utsXwKFVtyEQ==}
     dependencies:
       '@floating-ui/core': 1.0.2
+    dev: false
+
+  /@fontsource/poppins/4.5.10:
+    resolution: {integrity: sha512-oYZVHsnlwV3VWM1SE/m6SUxVh0QLk5+2wB+lBiXcI7N/0KVQWmV9YykaPqfJHBLvmdya+MAOnv+BQHeLU1vOOw==}
     dev: false
 
   /@jridgewell/gen-mapping/0.1.1:
