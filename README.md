@@ -17,7 +17,7 @@ I designed the application using two unique apis. I leveraged the GeoDB Cities A
 
 ## Data Flow:
 
-When a user begins to enter a city into a Search Field, the input value is sent to GeoDB Cities API as part of the query and the response sent back contains information including the longitude, latitude and country code for the city. The application then uses the coordinates from the response to make a new call to the OpenWeather API. The response then includes weather conditions as well as a forecast for the given city.
+When a user begins to enter a city into a Search Field, the input value is sent to GeoDB Cities API in an asynchronous call and the response sent back contains information including the longitude, latitude and country code for the city. The application then uses the coordinates from the response to make a new call to the OpenWeather API. The response then includes weather conditions as well as a forecast for the given city.
 
 <!-- ## Optimizations
 *(optional)*
