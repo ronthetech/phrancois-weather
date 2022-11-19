@@ -10,7 +10,7 @@
 
 **Tech used:** HTML, CSS, JavaScript, Nodejs, React, Vite
 
-I built the application using React and Vite to leverage the speedy development that Vite enables. I was able to quickly see changes as they were made because of HMR. I designed the application using two unique apis. I leveraged the GeoDBCities API to collect geographic data for the input cities. I implemented the OpenWeatherAPI to retrieve the weather data for each location.
+I built the application using React and Vite to leverage the speedy development that Vite enables. I was able to quickly see changes as they were made because of Hot Module Replacement, (HMR): enables a module to "hot replace" itself without affecting the rest of the page. I designed the application using two unique apis. I leveraged the GeoDB Cities API to collect geographic data for the input cities. Additionally, I implemented the OpenWeatherAPI to retrieve the weather data for each location.
 
 <!-- ## Optimizations
 *(optional)*
