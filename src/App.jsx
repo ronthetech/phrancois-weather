@@ -53,13 +53,13 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Phrancois Weather</h1>
-      <div>
+      <h1 className="title">Phrancois Weather</h1>
+      <div className="search">
         <h1>Your Location</h1>
         <Search onSearchChange={handleOnSearchChangeFrom} />
         {currentWeatherFrom && <CurrentWeather data={currentWeatherFrom} />}
       </div>
-      <div>
+      <div className="search">
         <h1>Destination</h1>
         <Search onSearchChange={handleOnSearchChangeTo} />
         {currentWeatherTo && <CurrentWeather data={currentWeatherTo} />}
