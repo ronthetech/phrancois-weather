@@ -6,6 +6,7 @@ specifiers:
   '@types/react-dom': ^18.0.8
   '@vitejs/plugin-react': ^2.2.0
   react: ^18.2.0
+  react-accessible-accordion: ^5.0.0
   react-dom: ^18.2.0
   react-select: ^5.6.1
   react-select-async-paginate: ^0.7.0
@@ -14,6 +15,7 @@ specifiers:
 dependencies:
   '@fontsource/poppins': 4.5.10
   react: 18.2.0
+  react-accessible-accordion: 5.0.0_biqbaboplfbrettd7655fr4n2y
   react-dom: 18.2.0_react@18.2.0
   react-select: 5.6.1_2zx2umvpluuhvlq44va5bta2da
   react-select-async-paginate: 0.7.0_gsbi6fbuknadbc7nzusqhk7rzy
@@ -1009,6 +1011,16 @@ packages:
       loose-envify: 1.4.0
       object-assign: 4.1.1
       react-is: 16.13.1
+    dev: false
+
+  /react-accessible-accordion/5.0.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-MT2obYpTgLIIfPr9d7hEyvPB5rg8uJcHpgA83JSRlEUHvzH48+8HJPvzSs+nM+XprTugDgLfhozO5qyJpBvYRQ==}
+    peerDependencies:
+      react: ^16.3.2 || ^17.0.0 || ^18.0.0
+      react-dom: ^16.3.3 || ^17.0.0 || ^18.0.0
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
