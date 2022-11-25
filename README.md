@@ -1,5 +1,9 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/f25e1cd6-3e4e-4641-85bf-c81f7962772f/deploy-status)](https://app.netlify.com/sites/phrancoisweather/deploys)
 
+<a href="https://www.ronjeanfrancois.com/">
+<img src="https://img.shields.io/badge/created%20by-@ronjtech-FD6A02.svg" alt="Created by Ron Jean-Francois">
+</a>
+
 # Phrancois Weather
 
 Web application that allows you to check the weather for two different locations and compare. Great for planning a trip, it lets you see the current weather conditions as well as the projected forecast.
